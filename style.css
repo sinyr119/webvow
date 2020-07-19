@@ -1,0 +1,142 @@
+/* 공통 */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.8rem;
+    min-width: 700px;
+    line-height: 1.6;
+    font-family:Sunflower;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header{
+    background:green;
+    padding: 10px;
+}
+.head-container{
+    max-width: 1400px;
+    margin:0 auto;
+    padding:0 20px;
+    position: relative;
+    height: 70px;
+}
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+}
+.nav{
+    text-align: right;
+}
+.list{
+    margin:0;
+    font-size: 0;
+}
+.list-item{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+}
+.list-item>a{
+    color:white;
+    display:block;
+    padding:10px;
+}
+.list-item>a:hover{
+    color:lightgreen;
+}
+/* main */
+.hero-section{
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    border-bottom: 3px solid black;
+    background-image: url(./hero_background.jpg);
+    background-size: cover;
+}
+.hero-desc{
+    font-size: 4rem;
+    line-height: 2;
+    letter-spacing: 5px;
+}
+.cta{
+    color:white;
+    width:500px;
+    margin:0 auto 50px;
+    padding:20px 50px;
+    border-radius: 8px;
+    display: block;
+    background:green;
+    font-size: 3rem;
+}
+.cta:hover{
+    background:rgb(47, 172, 47);
+}
+.search-form {
+    position: relative;
+    height: 50px;
+}
+.search-form > label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin=-1px;
+    clip:rect(0,0,0,0);
+}
+input[type="search"]{
+    width: 500px;
+    border-radius: 20px;
+    height: 50px;
+    padding:0 90px 0 10px;
+}
+.search-form-btn{
+    margin-left:-80px; 
+    top:0;
+    right: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.main-container::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.main-contents{
+    float:right;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tops{
+    border-right: 5px dotted black;
+}
+.side-contents{
+    background:yellow;
+    float: left;
+    width: 30%;
+}
+
+
+/* content info */
+.contents-info{
+    background:green;
+    padding:0 20px;
+}
+.links{
+    background:lightpink;
+}
+.footer{
+    background:purple;
+}
